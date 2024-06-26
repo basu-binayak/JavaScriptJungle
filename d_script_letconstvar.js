@@ -101,4 +101,7 @@ var language = "Javascript";
 
 console.log(language); // C++
 
-// Note: if you go to the console in the browser and type console.log(this) it will present all in global scope. The variables declared by var i.e. height and language are also present in this global scope. (this wil be helpful when we create objects and use 'this' keyword in a normal function and an arrow function - you can understand the difference then!)
+// Note: if you go to the console in the browser and type console.log(this) it will present all in global
+// scope. The variables declared by var i.e. height and language are also present in this global scope. 
+// (this wil be helpful when we create objects and use 'this' keyword in a normal function and an arrow 
+// function - you can understand the difference then!)
