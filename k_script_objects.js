@@ -87,7 +87,9 @@ console.log(values); // Output: ["John", "Doe", "Senior Developer", true, "USA",
 
 // Object.entries() - Returns an array of a given object's own enumerable string-keyed property [key, value] pairs
 const entries = Object.entries(person);
-console.log(entries); // Output: [["firstName", "John"], ["lastName", "Doe"], ["job", "Senior Developer"], ["isMarried", true], ["country", "USA"], ["fullName", function() {...}]]
+console.log(entries); 
+// Output: [["firstName", "John"], ["lastName", "Doe"], ["job", "Senior Developer"], ["isMarried", true], ["country", "USA"], 
+//         ["fullName", function() {...}]]
 
 // Destructuring Objects
 const { firstName, lastName, job } = person;
@@ -97,7 +99,8 @@ console.log(job); // Output: "Senior Developer"
 
 // Spread Operator with Objects
 const updatedPerson = { ...person, age: 31 }; // note the age ws deleted earlier
-console.log(updatedPerson); // Output: {firstName: "John", lastName: "Doe", job: "Senior Developer", isMarried: true, country: "USA", fullName: function() {...}, age: 31}
+console.log(updatedPerson); 
+// Output: {firstName: "John", lastName: "Doe", job: "Senior Developer", isMarried: true, country: "USA", fullName: function() {...}, age: 31}
 
 // Object.freeze() - Freezes an object: other code can't delete or change its properties
 const frozenPerson = Object.freeze({ name: 'Jane', age: 25 });
@@ -109,3 +112,19 @@ const sealedPerson = Object.seal({ name: 'Jake', age: 27 });
 sealedPerson.age = 28; // This will change the age property
 // delete sealedPerson.name; // This will not delete the name property
 console.log(sealedPerson); // Output: {name: "Jake", age: 28}
+
+/////////////////////////////////////////////////////////////////////////////////////
+////////////////////////// entries method in array///////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+const books = ['book1', 'book2', 'book3', 'book4', 'book5'];
+for (let [i, book] of books.entries()){
+    console.log(`${i} : ${book}`);
+}
+// output 
+// 0 : book1
+// 1 : book2
+// 2 : book3
+// 3 : book4
+// 4 : book5
+
